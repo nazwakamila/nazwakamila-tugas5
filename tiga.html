@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubah Text dan Warna</title>
+</head>
+<body>
+    <h1 id="judul">Selamat Datang!</h1>
+    <button onclick="ubahTextDanWarna()">Ubah Text dan Warna</button>
+
+    <script>
+        function ubahTextDanWarna() {
+            var judulElement = document.getElementById("judul");
+            judulElement.textContent = "Halo, Dunia!";
+            judulElement.style.color = "blue";
+            judulElement.style.backgroundColor = "#C2DEDC";
+        }
+    </script>
+</body>
+</html>

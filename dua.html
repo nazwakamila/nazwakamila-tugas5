@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array dengan Objek</title>
+</head>
+<body>
+    <h2>Daftar Siswa</h2>
+    <ul id="daftarSiswa"></ul>
+
+    <script>
+        // Mendefinisikan array dengan objek-objek siswa
+        var siswa = [
+            { id: 1, nama: "Nazwa Kamila", umur: 16, kelas: "XI RPL 2" },
+            { id: 2, nama: "Najlaa Aulia", umur: 17, kelas: "XI RPL 2" },
+            { id: 3, nama: "Era Nadine", umur: 16, kelas: "XI RPL 2" }
+        ];
+
+        // Mendapatkan elemen ul dengan id "daftarSiswa"
+        var daftarSiswaElement = document.getElementById("daftarSiswa");
+
+        // Mengisi daftar siswa ke dalam elemen ul
+        for (var i = 0; i < siswa.length; i++) {
+            var li = document.createElement("li");
+            li.textContent = "ID: " + siswa[i].id + ", Nama: " + siswa[i].nama + ", Umur: " + siswa[i].umur + ", Kelas: " + siswa[i].kelas;
+            daftarSiswaElement.appendChild(li);
+        }
+    </script>
+</body>
+</html>
